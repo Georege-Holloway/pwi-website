@@ -28,5 +28,8 @@
 /author/pwi/                                /about/                        301
 /author/*                                   /about/                        301
 
-# Any other child of /services/ folds back to the services hub
-/services/*                                 /services/                     301
+# There is deliberately no /services/* rule. The live WordPress site has no
+# child pages under /services/, only anchors on the one page, so the rule
+# would catch nothing. Netlify also shadows splat rules with a real directory
+# of the same name, so it would not fire even if it were needed. Verified
+# against the live nav and sitemap on 19 September 2026.

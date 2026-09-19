@@ -420,6 +420,11 @@ a:hover { color: var(--tan-text); }
   .service__inner { grid-template-columns: 1fr 1fr; gap: var(--s6); }
   .service:nth-of-type(even) .service__media { order: -1; }
 }
+/* Anchor targets carried over from the WordPress services page, so old
+   inbound links such as /services/#fittedwardrobes still land in the right
+   place. No visual effect. */
+.legacy-anchor { display: block; height: 0; scroll-margin-top: 5.5rem; }
+
 .service__list { padding-left: 1.1rem; }
 .service__list li { margin-bottom: 0.4rem; }
 
