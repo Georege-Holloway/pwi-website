@@ -1,0 +1,32 @@
+# Preserve every URL currently in the live Yoast sitemap so nothing that is
+# indexed 404s at cutover. Verified against
+# https://www.pwilimited.co.uk/page-sitemap.xml on 19 September 2026.
+
+# Pages that map cleanly onto a new equivalent
+/about-us/                                  /about/                        301
+/contact-us/                                /contact/                      301
+/privacy-policy/                            /privacy/                      301
+/privacy-policy                             /privacy/                      301
+/thank-you/                                 /contact/thanks/               301
+
+# Old standalone service pages. These sit at the top level on the WordPress
+# site, not under /services/, so the wildcard below does not catch them.
+/bespoke-fitted-furniture/                  /services/#fitted-wardrobes    301
+/alcoves/                                   /services/#alcoves             301
+
+# OPEN-10: the two terms and conditions pages and their PDFs have no equivalent
+# on the new site yet. They are pointed at the homepage so they do not 404.
+# Replace these two rules once George decides whether the T&Cs are carried
+# across as pages, republished as PDFs, or dropped.
+/terms-conditions-of-business-customer/     /                              301
+/terms-conditions-of-business-consumer/     /                              301
+
+# WordPress leftovers that are in the sitemap and should not be
+/hello-world/                               /                              301
+/category/uncategorized/                    /                              301
+/category/*                                 /                              301
+/author/pwi/                                /about/                        301
+/author/*                                   /about/                        301
+
+# Any other child of /services/ folds back to the services hub
+/services/*                                 /services/                     301

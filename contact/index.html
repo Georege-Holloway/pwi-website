@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact Pro Woodwork Installations</title>
+    <meta name="description" content="Get in touch with Richard and Michael for bespoke fitted wardrobes, alcoves, media units and home offices across London and the South East." />
+    <link rel="canonical" href="https://www.pwilimited.co.uk/contact/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pro Woodwork Installations" />
+    <meta property="og:title" content="Contact Pro Woodwork Installations" />
+    <meta property="og:description" content="Get in touch with Richard and Michael for bespoke fitted wardrobes, alcoves, media units and home offices across London and the South East." />
+    <meta property="og:url" content="https://www.pwilimited.co.uk/contact/" />
+    <meta property="og:locale" content="en_GB" />
+    <!-- OPEN ITEM: og:image needs a real photograph of PWI's own work, 1200x630.
+         Not added yet because no confirmed photography exists. See CLAUDE.md. -->
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Analytics is deliberately not installed in this build. See CLAUDE.md. -->
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.pwilimited.co.uk/"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://www.pwilimited.co.uk"}
+  ]
+}
+    </script>
+  </head>
+
+  <body class="page-contact">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark" aria-hidden="true">PWI</span>
+          <span class="brand__name">Pro Woodwork Installations
+            <span>Bespoke fitted furniture</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          Menu
+        </button>
+
+        <nav class="nav" id="primary-nav" data-open="false" aria-label="Primary">
+          <ul class="nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/process/">Process</a></li>
+          <li><a href="/contact/" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="wrap">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div class="page-head">
+        <div class="wrap">
+          <h1>Get in touch</h1>
+          <p>Tell us the room, what you want to store in it, and your postcode.</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="grid grid--2">
+            <div>
+              <h2>Send us the details</h2>
+              <p>The more you can tell us at this stage the more useful our first reply will be.
+                Your postcode is genuinely helpful, it tells us immediately whether you are within
+                the area we cover.</p>
+
+              <form class="form" name="enquiry" method="POST" action="/contact/thanks/"
+                    data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="enquiry" />
+
+                <p class="hp">
+                  <label>Leave this field empty
+                    <input name="bot-field" tabindex="-1" autocomplete="off" />
+                  </label>
+                </p>
+
+                <div class="field">
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone number
+                    <span class="field__hint">Optional, but it is usually the quickest way to sort out a visit.</span>
+                  </label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+
+                <div class="field">
+                  <label for="postcode">Postcode
+                    <span class="field__hint">So we can check you are within the area we cover.</span>
+                  </label>
+                  <input id="postcode" name="postcode" type="text" autocomplete="postal-code" required />
+                </div>
+
+                <div class="field">
+                  <label for="service">What are you interested in?</label>
+                  <select id="service" name="service">
+                    <option value="">Please choose</option>
+                    <option value="Fitted wardrobes">Fitted wardrobes</option>
+                    <option value="Alcoves">Alcoves</option>
+                    <option value="Media units">Media units</option>
+                    <option value="Home offices">Home offices</option>
+                    <option value="General carpentry">General carpentry</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="message">About the project
+                    <span class="field__hint">The room, roughly what you want, and anything awkward about the space.</span>
+                  </label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button class="btn" type="submit">Send enquiry</button>
+
+                <p class="field__hint" style="margin-top: var(--s2)">We use what you send us to reply
+                  to your enquiry and nothing else. See our <a href="/privacy/">privacy policy</a>.</p>
+              </form>
+            </div>
+
+            <div>
+              <h2>Call or email</h2>
+              <ul class="contact-list">
+                <li>
+                  <span class="label">Richard</span>
+                  <a href="tel:+447989573427">07989 573427</a>
+                </li>
+                <li>
+                  <span class="label">Michael</span>
+                  <a href="tel:+447725806461">07725 806461</a>
+                </li>
+                <li>
+                  <span class="label">Office</span>
+                  <a href="tel:+441689332188">01689 332188</a>
+                </li>
+                <li>
+                  <span class="label">Email</span>
+                  <a href="mailto:info@pwilimited.co.uk">info@pwilimited.co.uk</a>
+                </li>
+              </ul>
+
+              <h2>Where we are</h2>
+              <p>We work from a workshop in the Bromley area and visit customers at home across
+                London and the South East. There is no shop or showroom to call in at, so the first
+                step is always a phone call or an email.</p>
+              <p><a href="/areas/">See the areas we cover</a></p>
+
+              <div class="ph">
+                <strong>Placeholder: opening hours, OPEN-1</strong>
+                <p>Needs the real hours the phones are answered, and confirmation that the office number reaches a person rather than a diverted mobile or an unmonitored line. Once confirmed, the hours also go into the openingHoursSpecification property of the homepage schema.</p>
+              </div>
+
+              <div class="ph">
+                <strong>Placeholder: business address, OPEN-1 and OPEN-9</strong>
+                <p>No address is published on this page and no map is embedded, because there is no confirmed customer facing address. If PWI want a postal address shown, or a Google Business Profile location, that needs deciding first. A map pin on somewhere that is not a real visitable address is worse than no map at all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="site-footer__grid">
+          <div>
+            <h2>Pro Woodwork Installations</h2>
+            <p>Bespoke fitted wardrobes, alcove units, media units and home offices, made in our
+              own workshop and fitted in your home.</p>
+          </div>
+
+          <div>
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/services/">Services</a></li>
+              <li><a href="/portfolio/">Portfolio</a></li>
+              <li><a href="/process/">Process</a></li>
+              <li><a href="/areas/">Areas we cover</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/privacy/">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Get in touch</h3>
+            <ul>
+              <li>Richard: <a href="tel:+447989573427">07989 573427</a></li>
+              <li>Michael: <a href="tel:+447725806461">07725 806461</a></li>
+              <li>Office: <a href="tel:+441689332188">01689 332188</a></li>
+              <li><a href="mailto:info@pwilimited.co.uk">info@pwilimited.co.uk</a></li>
+              <li><a href="https://www.instagram.com/pwilimited/" rel="noopener">Instagram</a></li>
+              <li><a href="https://www.facebook.com/pwilimited" rel="noopener">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer__legal">
+          <p>PWI Limited, trading as Pro Woodwork Installations. Registered in England and Wales,
+            company number 13894861.</p>
+          <p>Copyright 2026 PWI Limited</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/nav.js" defer></script>
+  </body>
+</html>
