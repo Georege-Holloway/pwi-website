@@ -11,3 +11,7 @@ Rules, no exceptions:
 4. Alt text describes the furniture, not the photograph.
 
 Naming: project-slug-01.webp, for example bromley-alcove-units-01.webp
+
+5. Never replace a photo under the same filename. Everything in /images/ is
+   served with a one year immutable cache, so returning visitors would keep
+   seeing the old one. Give the new photo a new name and update the HTML.
