@@ -573,3 +573,30 @@ a:hover { color: var(--tan-text); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* ------------------------------------------------- real photography ---- */
+
+.hero .media { box-shadow: var(--shadow); }
+
+.project > .media { border-radius: 0; }
+
+/* Homepage recent work tiles */
+.thumb { display: block; text-decoration: none; color: var(--forest); }
+.thumb .media { margin-bottom: var(--s1); transition: opacity 0.15s ease; }
+.thumb:hover .media { opacity: 0.88; }
+.thumb__label { font-family: var(--font-display); font-size: var(--step-1); }
+.thumb:hover .thumb__label { text-decoration: underline; }
+
+/* Questions for Richard and Michael inside a placeholder block */
+.ph ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.ph li { margin-bottom: 0.25rem; }
+
+/* Short inline placeholder, for a single missing value such as a postcode */
+.ph-inline {
+  background: var(--flag-bg);
+  color: #7a3a14;
+  border: 1px dashed var(--flag);
+  border-radius: 100px;
+  padding: 0.1em 0.7em;
+  font-weight: 600;
+}

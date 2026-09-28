@@ -86,9 +86,16 @@ Every one of them must be gone before the site goes live. To find them all:
 grep -rn 'class="ph"\|class="imgslot' --include='*.html' .
 ```
 
-**Adding a real portfolio project.** There is a commented template in
-`portfolio/index.html`. Copy it, fill it in, and delete one of the placeholder articles. Alt text
-describes the furniture, not the photograph.
+**Photography.** Every photo on the site is PWI's own work, taken from the old WordPress site and
+sorted in `../current-site-images/`, which is outside this repo. That folder also holds 34 stock
+images from the old site. None of them go in this repo. See the constraints above.
+
+Photos are exported as WebP at two widths, cropped to 4:3, with all metadata stripped. Stripping
+matters: iPhone photos can carry the GPS position of a customer's house.
+
+**Adding a real portfolio project.** There is a commented template at the bottom of the grid in
+`portfolio/index.html`. Copy it into the grid and fill it in. Alt text describes the furniture,
+not the photograph.
 
 **Turning on testimonials.** The block is built and styled on the homepage but carries no content.
 There is commented markup in `index.html` under the testimonials section. Uncomment it, add real
@@ -108,7 +115,9 @@ Never mark up a placeholder as an answer.
       to the live domain the site will be de-indexed. This is the single most important line in
       the repo.
 - [ ] Every `.ph` and `.imgslot` placeholder replaced or removed
-- [ ] `og:image` added to all nine pages, 1200x630, a real photograph
+- [ ] Confirm `og:image` resolves on the live domain. It points at
+      `https://www.pwilimited.co.uk/images/og-image.jpg`, matching the canonical tags, so link
+      previews show no image on the Netlify staging URL. That is expected until cutover.
 - [ ] Re-check `_redirects` against the live sitemap in case anything changed
 - [ ] Decide what happens to the two terms and conditions pages, currently pointed at the homepage
 - [ ] Privacy policy completed: registered address, ICO position, retention period
